@@ -1,0 +1,31 @@
+// FOR 2018
+Hammonton town voting district 1 ---> Hammonton D-1
+- Remove town, voting district 1 to D-1
+
+Old Bridge township ward 1 voting district 2  --->   Old Bridge Ward 1-1
+Absecon city ward 1 voting district 1  ---> Absecon 1-1
+- ward 1 to 1, add -, voting district 1 to 1
+- if not found, don't delete ward
+
+Galloway township voting district 10  --->  Galloway D-10
+-  If township, remove township, change voting district to D-10
+
+River Vale township voting district 2  ---> River Vale 1 - Election Day
+Point Pleasant Beach borough voting district 2 ---> Point Pleasant Beach District 01
+-  ???? 
+
+Pattern:
+- Remove any thing like 'town', 'township', 'city' from geojson name.
+- If 'ward' exists, change 'ward x' to 'x' and change 'voting district y' to 'y' with a '-' in between.
+    - If 'ward' doesn't exist, change 'voting district x' to 'D-x'
+    - if precinct still not found, change 'voting district x' to 'x - Election Day'
+- If not found, and ward exists, add 'Ward'.
+- If not found, 'voting district x' to 'District x' or 'District 0x'
+
+Approach:
+- List all the possible naming, find.
+
+
+// FOR 2016
+Galloway township voting district 10  --->  Galloway Twp D-10
+- If township, township -> Twp, change voting district to D-10

@@ -1,0 +1,11 @@
+Geojson:
+MS:  https://www.maris.state.ms.us/HTML/DATA/Political.html
+OH: Ohio state doesn't have official precinct geojson. https://github.com/mggg/ohio-precincts
+NJ: https://catalog.data.gov/dataset/tiger-line-shapefile-2012-2010-state-new-jersey-2010-census-voting-district-state-based-vtd/resource/0930b127-e10d-42bb-becd-352197985050?inner_span=True
+
+Demo: US census API
+
+Election:
+MS: The secretary of state only has the data in pdf format (images), so Open elections project
+OH: From Ohio State of secretary https://www.sos.state.oh.us/elections/election-results-and-data/2016-official-elections-results/
+NJ: There is no aggregated data, data is by each county, so Open election project.
